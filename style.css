@@ -327,18 +327,16 @@ body {
     color: #ffd700;
     /* Gold */
     text-shadow:
-        0 0 10px rgba(255, 215, 0, 0.5),
-        0 0 20px rgba(255, 215, 0, 0.3),
-        0 0 30px rgba(255, 215, 0, 0.1);
+        0 0 5px rgba(255, 215, 0, 0.3),
+        0 0 10px rgba(255, 215, 0, 0.1);
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 0.2rem;
-    /* Gradient Text */
-    background: linear-gradient(to bottom, #ffd700, #b8860b);
+    /* Gradient Text - slightly toned down */
+    background: linear-gradient(to bottom, #ffd700, #d4af37);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: goldPulse 2s infinite ease-in-out;
 }
 
 .prize-amount-wrapper .currency {
@@ -366,10 +364,10 @@ body {
     transform: translate(-50%, -50%);
     width: 200px;
     height: 200px;
-    background: radial-gradient(circle, rgba(255, 215, 0, 0.15) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(255, 215, 0, 0.1) 0%, transparent 60%);
+    /* Reduced opacity */
     border-radius: 50%;
     z-index: 1;
-    animation: pulseGlow 3s infinite;
 }
 
 @keyframes pulseGlow {
